@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+
+
+int main() {
+    double s = 1/ 201;
+    for (int i = 199; i >= 3; i -= 2) s = 1 / (i + s);
+    printf("%f",s);
+
+}
