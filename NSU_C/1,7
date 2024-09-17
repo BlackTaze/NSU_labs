@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("%d",(a % b == 0) || (b % a == 0));
+    return 0;
+
+
+}
