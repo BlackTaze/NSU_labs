@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1726370636 source:d:\nsu\Прога\nsu_c\2.2\main.c
+	<stdio.h>
+	<stdlib.h>
+
