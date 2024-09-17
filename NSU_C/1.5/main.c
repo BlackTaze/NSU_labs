@@ -11,6 +11,4 @@ int main()
     printf("%d %d \n",hours,mins);
     printf("%d",x);
     return 0;
-
-
 }
