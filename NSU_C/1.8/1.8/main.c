@@ -3,11 +3,11 @@
 
 int main()
 {
-    int k,l,f,p,e;
-    scanf("%d%d%d",&k,&l,&f);
-    p = (f - 1) / (k * l) + 1 ;
-    e = ((((f -1)  / l) % k ) + 1);
+    int Floors,CountOfApartments,ApartmentNum,entrance,floor;
+    scanf("%d%d%d",&Floors,&CountOfApartments,&ApartmentNum);
+    entrance = (ApartmentNum - 1) / (Floors * CountOfApartments) + 1 ;
+    floor = ((((ApartmentNum -1)  / CountOfApartments) % Floors ) + 1);
 
-    printf("%d%d",p,e);
+    printf("%d %d",entrance,floor);
     return 0;
 }
