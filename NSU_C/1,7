@@ -7,6 +7,4 @@ int main()
     scanf("%d%d",&a,&b);
     printf("%d",(a % b == 0) || (b % a == 0));
     return 0;
-
-
 }
