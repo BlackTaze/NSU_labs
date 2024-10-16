@@ -20,7 +20,7 @@ int main() {
         scanf("%d", &a[i]);
     }
 
-    double total_area = 0.0;
+    double total = 0.0;
     int x0 = a[0], y0 = a[1];
 
     for (int i = 1; i < n - 1; i++) {
@@ -33,10 +33,10 @@ int main() {
         double side_b = distance(x1, y1, x2, y2);
         double side_c = distance(x2, y2, x0, y0);
 
-        total_area += area(side_a, side_b, side_c);
+        total += area(side_a, side_b, side_c);
     }
 
-    printf("%f",total_area);
+    printf("%f",total);
 
     free(a);
     return 0;
