@@ -9,31 +9,31 @@ unsigned long long factorial(int n) {
     return n * factorial(n - 1);
 }
 
-
-void DigInArray(unsigned long long fact, int **digits, int *size) {
-    *size = 0;
-    *digits = (int *)malloc(20 * sizeof(int));
-    while (fact > 0) {
-        (*digits)[(*size)++] = fact % 10;
-        fact /= 10;
-    }
-}
-
 int main() {
     int n;
     scanf("%d", &n);
 
     unsigned long long fact = factorial(n);
-    int *digits;
-    int size;
-    DigInArray(fact, &digits, &size);
+    
+    int num_digits = 0;
+    unsigned long long temp = fact;
+    while (temp > 0) {
+        num_digits++;
+        temp /= 10;
+    }
 
-    for (int i = size - 1; i >= 0; i--) {
+    int *digits = (int *)malloc(num_digits * sizeof(int));
+    int i = 0;
+    while (fact > 0) {
+        digits[i++] = fact % 10;
+        fact /= 10;
+    }
+    for (int i = num_digits - 1; i >= 0; i--) {
         printf("%d", digits[i]);
     }
     printf("\n");
 
-
     free(digits);
     return 0;
 }
+
