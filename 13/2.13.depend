@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1728817835 source:d:\Прога\2.13\main.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+
