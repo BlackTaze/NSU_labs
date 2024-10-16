@@ -4,7 +4,7 @@
 int findMax(int *arr, int n) {
 
     if (n == 1) {
-        return arr[0];
+        return arr;
     }
     int maxInRest = findMax(arr, n - 1);
     if (arr[n - 1] > maxInRest) {
